@@ -55,40 +55,41 @@ N이 주어질 때, 다음과 같은 프로그램을 작성해보자.
 
 ```java
 import java.util.Scanner;
-public class Main{
-    public static void main(String[] args){
+
+class aaa {
+  public static void main(String[] args) {
 
     Scanner sc = new Scanner(System.in);
 
-    int A_length = sc.nextInt();
-    int B_length = A_length;
+    int[][] arr = new int[105][105];
+    int n = sc.nextInt();
 
+    int y = 0;
+    int x = 0;
     int cnt = 1;
-    int current = 1;
 
-    for (int j = 0; j < A_length; j++) {
-      int outPut = 0;
-      int inner_variable = 0;
+    for (int i = 0; i < n; i++) {
+			
+			// x, y 변수를 사용하지 않고, 한다면 i, j 가 계속 증가하기 때문이다.
+      y = 0; 
+      x = i;
 
-      for (int i = 1; i <= B_length; i++) {
+      for (int j = 0; j <= i; j++) {
+        arr[y][x] = cnt;
+        cnt++;
 
-        if (i == 1) {
-          outPut = current;
-          inner_variable = cnt;
-        }
-
-        System.out.print(outPut + " ");
-
-        outPut += inner_variable;
-        inner_variable++;
+        y++;
+        x--;
       }
-
-      System.out.println();
-      B_length--;
-      cnt++;
-      current += cnt;
-
     }
+
+    for (int i = 0; i < n; i++) {
+      for (int j = 0; j < n - i; j++) {
+        System.out.print(arr[i][j] + " ");
+      }
+      System.out.println();
+    }
+
   }
 }
 ```
