@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class eee {
 
-    static int n;
+    static long n;
     static long k;
 
     public static long getOrder(long x) {
