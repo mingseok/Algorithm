@@ -23,7 +23,7 @@
 
     - 백준 알고리즘 번호에 따라 Main_[번호] 규칙으로 정렬
 
-    - [소스 폴더 보기]()
+    - [소스 폴더 보기](https://github.com/mingseok/Algorithm/tree/main/%EB%B0%B1%EC%A4%80%20%ED%8F%B4%EB%8D%94)
 
 
 </br>
