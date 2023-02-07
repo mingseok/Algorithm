@@ -38,7 +38,7 @@
 
 </br>
 
-- 다시 확인하기.
+- 필수 알고리즘.
 
-    - [소스 폴더 보기](https://github.com/mingseok/Algorithm/tree/main/%EB%8B%A4%EC%8B%9C%20%ED%99%95%EC%9D%B8%ED%95%98%EA%B8%B0)
+    - [소스 폴더 보기](https://github.com/mingseok/Algorithm/tree/main/%ED%95%84%EC%88%98%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)
 
