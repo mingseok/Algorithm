@@ -2,9 +2,9 @@
 
 [문제해결방법론](https://github.com/mingseok/Algorithm/blob/main/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95%EB%A1%A0/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95%EB%A1%A0.md)
 
+</br>
 
-
-### 자주 틀렸던 리스트
+### 알고리즘을 풀며, 문제가 되었던 리스트.
 
 - BFS는 시작전에 내 위치를 꼭 찍자
 
@@ -32,7 +32,7 @@
 
 </br>
 
-알고리즘 문제를 푸는 레포지토리.
+### 알고리즘 문제를 푸는 레포지토리.
 
 - 코드트리 : 코드트리 문제를 해결한 소스코드 입니다.
 
