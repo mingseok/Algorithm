@@ -4,6 +4,32 @@
 
 
 
+### 자주 틀렸던 리스트
+
+- BFS는 시작전에 내 위치를 찍자
+
+    - EX) : board[1][1] = 1;
+
+
+- input 입력할때 int[][] 을 다룰때 x, y가 반대로 나오는 경우가 있다.
+
+    - 그런 경우 다시 컬렉션이나, 변수에 변경하여 사용하면 되니 어렵게 생각하지 말기.
+    
+    ```java
+        m = kb.nextInt();
+        n = kb.nextInt();
+        board = new int[n][m];
+        
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                Q.offer(new Point(i, j));
+            }
+        }
+    ```
+
+
+
+
 </br>
 
 알고리즘 문제를 푸는 레포지토리.
