@@ -2,6 +2,12 @@
 
 [문제해결방법론](https://github.com/mingseok/Algorithm/blob/main/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95%EB%A1%A0/%EB%AC%B8%EC%A0%9C%ED%95%B4%EA%B2%B0%EB%B0%A9%EB%B2%95%EB%A1%A0.md)
 
+</br>
+
+### 알고리즘 스터디
+
+- [스터디 레포지토리 링크](https://github.com/mingseok/programmers-baekjoon-algorithm-study)
+
 
 </br>
 
