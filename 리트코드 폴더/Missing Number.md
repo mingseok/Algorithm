@@ -20,3 +20,18 @@ class Solution {
     }
 }
 ```
+
+<br/>
+
+```java
+class Solution {
+    public int missingNumber(int[] nums) {
+        int total = IntStream.range(0,nums.length+1).sum();
+        int sum = 0;
+        for (int i = 0; i < nums.length; i++) {
+            sum += nums[i];
+        }
+        return total - sum;
+    }
+}
+```
