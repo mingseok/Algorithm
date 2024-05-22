@@ -25,7 +25,9 @@ class Solution {
 }
 ```
 
-<br/>
+<br/><br/>
+
+## 두번째 방법
 
 ```java
 public class ContainerWithMostWater {
