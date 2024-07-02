@@ -28,3 +28,23 @@ class Solution {
     }
 }
 ```
+<br/><br/>
+
+```java
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        char[] sChar = s.toCharArray();
+        char[] tChar = t.toCharArray();
+
+        for (int temp : sChar) {
+            sSum += temp;
+        }
+
+        for (int temp : tChar) {
+            tSum += temp;
+        }
+
+        return sSum == tSum;
+    }
+}
+```
