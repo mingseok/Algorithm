@@ -22,3 +22,25 @@ class Solution {
     }
 }
 ```
+
+<br/><br/>
+
+```java
+public class Main {
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	    
+	    int n = scan.nextInt();
+	    int k = scan.nextInt();
+	    int result = 0;
+	 
+	    while(true){
+	        result += (n % k) + 1;
+	        n /= k;
+	        if(n < k) break;
+	    }
+	    result += (n - 1);
+	    System.out.println("result = " + result);  
+	}
+}
+```
