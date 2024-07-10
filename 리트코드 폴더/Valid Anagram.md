@@ -32,19 +32,24 @@ class Solution {
 
 ```java
 class Solution {
-    public boolean isAnagram(String s, String t) {
-        char[] sChar = s.toCharArray();
-        char[] tChar = t.toCharArray();
-
-        for (int temp : sChar) {
-            sSum += temp;
-        }
-
-        for (int temp : tChar) {
-            tSum += temp;
-        }
-
-        return sSum == tSum;
-    }
-}
+	   public boolean isAnagram(String s, String t) {
+		        if (s.length() != t.length()) {
+		            return false;
+		        }
+		        int[] alph = new int[26]; 
+		        int[] alph2 = new int[26];
+	       
+		        for (int i = 0; i < s.length(); i++) {
+		            char sArray = s.charAt(i);
+		            char tArray = t.charAt(i);
+		            alph[sArray-97]++;            
+		            alph2[tArray-97]++; 
+		        }
+		        for (int i = 0; i < alph.length; i++) {
+		            if (alph[i] != alph2[i]) {
+		                return false;
+		            }
+		        }
+		        return true;
+		    }
 ```
