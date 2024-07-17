@@ -27,3 +27,23 @@ class Solution {
     }
 }
 ```
+
+<br/><br/>
+
+```java
+class Solution {
+    public int getWinner(int[] arr, int k) {
+        int win = 0, cur = arr[0];
+        for(int i=1; i < arr.length; i++) {
+            if (arr[i] > cur) {
+                cur = arr[i];
+                win = 0;
+            }
+            if (++win == k) {
+                break;
+            }
+        }
+        return cur;
+    }
+}
+```
