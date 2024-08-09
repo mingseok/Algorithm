@@ -2,6 +2,40 @@
 
 ```java
 class Solution {
+    int i = 0;
+
+    public String decodeString(String s) {
+        int cnt = 0;    
+        StringBuilder sb = new StringBuilder();
+
+        while (i < s.length()) {
+            char c = s.charAt(i++);
+
+            if (Character.isDigit(c)) {
+                cnt = (cnt * 10) + Character.getNumericValue(c);
+            } else if (c == '[') {
+                String inner = decodeString(s);
+
+                for (int i = 0; i < cnt; i++) {
+                    sb.append(inner);
+                }
+                cnt = 0;
+            } else if (c == ']') {
+                break;
+            } else {
+                sb.append(c);
+            }
+        }
+
+        return sb.toString();
+    }
+}
+```
+
+<br/><br/>
+
+```java
+class Solution {
     public String decodeString(String s) {
         // 스택을 두 개 사용: 하나는 반복 횟수, 하나는 문자열을 저장
         Stack<Integer> countStack = new Stack<>();
