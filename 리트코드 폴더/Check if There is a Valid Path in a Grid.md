@@ -41,3 +41,49 @@ class Solution {
     }
 }
 ```
+
+<br/><br/>
+
+
+```java
+public class Solution {
+    public boolean hasValidPath(int[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+        boolean[][] visited = new boolean[rows][cols];
+        return dfs(grid, 0, 0, visited);
+    }
+    
+    private boolean dfs(int[][] grid, int r, int c, boolean[][] visited) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+        
+        if (r == rows - 1 && c == cols - 1) {
+            return true;
+        }
+        
+        visited[r][c] = true;
+        int type = grid[r][c];
+        
+        for (int[] dir : DIRECTIONS[type]) {
+            int newR = r + dir[0];
+            int newC = c + dir[1];
+            
+            if (newR >= 0 && newR < rows && newC >= 0 && newC < cols && !visited[newR][newC]) {
+                int newType = grid[newR][newC];
+                
+                for (int[] newDir : DIRECTIONS[newType]) {
+                    if (newR + newDir[0] == r && newC + newDir[1] == c) {
+                        if (dfs(grid, newR, newC, visited)) {
+                            return true;
+                        }
+                        break;
+                    }
+                }
+            }
+        }
+        visited[r][c] = false;
+        return false;
+    }
+}
+```
