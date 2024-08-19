@@ -36,3 +36,37 @@ class Solution {
     }
 }
 ```
+
+<br/><br/>
+
+```java
+class Solution {
+    fun predictPartyVictory(senate: String): String {
+        
+        val vote = BooleanArray(senate.length) { false }
+        
+        var rCount = 0
+        var dCount = 0
+        
+        while(rCount < senate.length && dCount < senate.length) {
+            
+            for(i in 0 until senate.length) {
+                if(vote[i]) continue
+                if(rCount == senate.length || dCount == senate.length) break
+                
+                if(senate[i] == 'R') {
+                    if(rCount < dCount) vote[i] = true
+                    rCount += 1
+                }else {
+                    if(dCount < rCount) vote[i] = true
+                    dCount += 1
+                }
+            }
+            
+        }
+        
+        return if(rCount == senate.length) "Radiant" else "Dire"
+        
+    }
+}
+```
